@@ -1,0 +1,14 @@
+class Fish{
+	String name;
+	String size;
+	public Fish(String nameLocal,String sizeLocal){
+		System.out.println("name of fish:"+name);
+		System.out.println("size of fish:"+size);
+		name=nameLocal;
+		size=sizeLocal;
+		System.out.println("name of fish:"+nameLocal);
+		System.out.println("size of fish:"+sizeLocal);
+	}
+}
+		
+		

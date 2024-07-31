@@ -1,0 +1,253 @@
+// Define the Lens class
+class Lens {
+    private String type;
+    private double focalLength;
+
+    public Lens(String type, double focalLength) {
+        this.type = type;
+        this.focalLength = focalLength;
+    }
+
+    @Override
+    public String toString() {
+        return "Lens[type=" + type + ", focalLength=" + focalLength + "]";
+    }
+}
+
+// Define the Coil class
+class Coil {
+    private String material;
+    private int turns;
+
+    public Coil(String material, int turns) {
+        this.material = material;
+        this.turns = turns;
+    }
+
+    @Override
+    public String toString() {
+        return "Coil[material=" + material + ", turns=" + turns + "]";
+    }
+}
+
+// Define the Cap class
+class Cap {
+    private String color;
+    private double diameter;
+    private String material;
+
+    public Cap(String color, double diameter, String material) {
+        this.color = color;
+        this.diameter = diameter;
+        this.material = material;
+    }
+
+    @Override
+    public String toString() {
+        return "Cap[color=" + color + ", diameter=" + diameter + ", material=" + material + "]";
+    }
+}
+
+// Define the Gold class
+class Gold {
+    private double weight;
+    private double purity;
+    private String source;
+
+    public Gold(double weight, double purity, String source) {
+        this.weight = weight;
+        this.purity = purity;
+        this.source = source;
+    }
+
+    @Override
+    public String toString() {
+        return "Gold[weight=" + weight + ", purity=" + purity + ", source=" + source + "]";
+    }
+}
+
+// Define the Board class
+class Board {
+    private String type;
+    private double length;
+    private double width;
+
+    public Board(String type, double length, double width) {
+        this.type = type;
+        this.length = length;
+        this.width = width;
+    }
+
+    @Override
+    public String toString() {
+        return "Board[type=" + type + ", length=" + length + ", width=" + width + "]";
+    }
+}
+
+// Define the Led class
+class Led {
+    private String color;
+    private int brightness;
+    private double voltage;
+
+    public Led(String color, int brightness, double voltage) {
+        this.color = color;
+        this.brightness = brightness;
+        this.voltage = voltage;
+    }
+
+    @Override
+    public String toString() {
+        return "Led[color=" + color + ", brightness=" + brightness + ", voltage=" + voltage + "]";
+    }
+}
+
+// Define the SimCard class
+class SimCard {
+    private String carrier;
+    private String number;
+    private String planType;
+
+    public SimCard(String carrier, String number, String planType) {
+        this.carrier = carrier;
+        this.number = number;
+        this.planType = planType;
+    }
+
+    @Override
+    public String toString() {
+        return "SimCard[carrier=" + carrier + ", number=" + number + ", planType=" + planType + "]";
+    }
+}
+
+// Runner class to create instances and print them
+public class Runner {
+    public static void main(String[] args) {
+        // Create instances of Lens
+        Lens[] lenses = {
+            new Lens("Telephoto", 200.0),
+            new Lens("Wide Angle", 24.0),
+            new Lens("Standard", 50.0),
+            new Lens("Macro", 100.0),
+            new Lens("Fish Eye", 15.0),
+            new Lens("Zoom", 70.0),
+            new Lens("Prime", 35.0),
+            new Lens("Kit", 18.0),
+            new Lens("Portrait", 85.0),
+            new Lens("Tilt-Shift", 90.0),
+            new Lens("Infrared", 50.0)
+        };
+
+        // Create instances of Coil
+        Coil[] coils = {
+            new Coil("Copper", 100),
+            new Coil("Aluminum", 120),
+            new Coil("Steel", 80),
+            new Coil("Nickel", 90),
+            new Coil("Gold", 60),
+            new Coil("Silver", 110),
+            new Coil("Titanium", 70),
+            new Coil("Zinc", 50),
+            new Coil("Brass", 95),
+            new Coil("Bronze", 85),
+            new Coil("Platinum", 100)
+        };
+
+        // Create instances of Cap
+        Cap[] caps = {
+            new Cap("Red", 5.0, "Plastic"),
+            new Cap("Blue", 5.5, "Metal"),
+            new Cap("Green", 4.5, "Wood"),
+            new Cap("Yellow", 6.0, "Rubber"),
+            new Cap("Black", 5.0, "Plastic"),
+            new Cap("White", 5.5, "Metal"),
+            new Cap("Pink", 4.5, "Wood"),
+            new Cap("Orange", 6.0, "Rubber"),
+            new Cap("Purple", 5.0, "Plastic"),
+            new Cap("Brown", 5.5, "Metal"),
+            new Cap("Gray", 4.5, "Wood")
+        };
+
+        // Create instances of Gold
+        Gold[] golds = {
+            new Gold(10.0, 99.9, "Mine A"),
+            new Gold(5.0, 99.5, "Mine B"),
+            new Gold(20.0, 99.8, "Mine C"),
+            new Gold(15.0, 99.7, "Mine D"),
+            new Gold(25.0, 99.9, "Mine E"),
+            new Gold(30.0, 99.6, "Mine F"),
+            new Gold(12.0, 99.4, "Mine G"),
+            new Gold(18.0, 99.3, "Mine H"),
+            new Gold(22.0, 99.9, "Mine I"),
+            new Gold(17.0, 99.8, "Mine J"),
+            new Gold(19.0, 99.7, "Mine K")
+        };
+
+        // Create instances of Board
+        Board[] boards = {
+            new Board("Pine", 2.0, 4.0),
+            new Board("Oak", 2.5, 5.0),
+            new Board("Cedar", 2.0, 4.5),
+            new Board("Maple", 3.0, 5.5),
+            new Board("Walnut", 2.0, 4.0),
+            new Board("Birch", 2.5, 5.0),
+            new Board("Cherry", 2.0, 4.5),
+            new Board("Hickory", 3.0, 5.5),
+            new Board("Mahogany", 2.0, 4.0),
+            new Board("Teak", 2.5, 5.0),
+            new Board("Bamboo", 2.0, 4.5)
+        };
+
+        // Create instances of Led
+        Led[] leds = {
+            new Led("Red", 500, 2.0),
+            new Led("Blue", 600, 2.5),
+            new Led("Green", 550, 2.2),
+            new Led("Yellow", 700, 2.8),
+            new Led("White", 800, 3.0),
+            new Led("Purple", 450, 2.1),
+            new Led("Orange", 650, 2.6),
+            new Led("Pink", 400, 2.0),
+            new Led("Amber", 750, 3.2),
+            new Led("Cyan", 850, 3.5),
+            new Led("Magenta", 500, 2.3)
+        };
+
+        // Create instances of SimCard
+        SimCard[] simCards = {
+            new SimCard("Verizon", "123-456-7890", "Prepaid"),
+            new SimCard("AT&T", "234-567-8901", "Postpaid"),
+            new SimCard("T-Mobile", "345-678-9012", "Prepaid"),
+            new SimCard("Sprint", "456-789-0123", "Postpaid"),
+            new SimCard("Vodafone", "567-890-1234", "Prepaid"),
+            new SimCard("Orange", "678-901-2345", "Postpaid"),
+            new SimCard("EE", "789-012-3456", "Prepaid"),
+            new SimCard("O2", "890-123-4567", "Postpaid"),
+            new SimCard("Three", "901-234-5678", "Prepaid"),
+            new SimCard("BT", "012-345-6789", "Postpaid"),
+            new SimCard("Virgin", "123-456-7891", "Prepaid")
+        };
+
+        // Print all instances
+        for (Lens lens : lenses) {
+            System.out.println(lens);
+        }
+
+        for (Coil coil : coils) {
+            System.out.println(coil);
+        }
+
+        for (Cap cap : caps) {
+            System.out.println(cap);
+        }
+
+        for (Gold gold : golds) {
+            System.out.println(gold);
+        }
+
+        for (Board board : boards) {
+            System.out.println(board);
+        }
+
+        for (Led led : leds) {
+            System.out.println(
