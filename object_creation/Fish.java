@@ -6,8 +6,8 @@ class Fish{
 		//System.out.println("size of fish:"+size);
 		name=nameLocal;
 		size=sizeLocal;
-		//System.out.println("name of fish:"+name);
-		//System.out.println("size of fish:"+size);
+		System.out.println("name of fish:"+name);
+		System.out.println("size of fish:"+size);
 	}
 }
 		
