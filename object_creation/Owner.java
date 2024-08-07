@@ -1,8 +1,8 @@
 
 
 //literal means assigning value to the instance variable
-//when we are try to print the value of non-primitive instance , it will print the datatype @(separator)location
-class Owmer{
+//when we are try to print the value of non-primitive instance ,--->string representation it will print the datatype @(separator)location
+class Owner{
 	String name;
 	int age;
 	char gender;
@@ -17,5 +17,5 @@ class Owmer{
 		System.out.println("name:"+this,name);
 		System.out.println("age:"+this.age);
 		System.out.println("gender:"+this.gender);
-	}
+	}-
 }
