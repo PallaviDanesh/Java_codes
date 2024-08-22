@@ -1,4 +1,5 @@
-class Key{
+class Key
+{
 	float weight;
 	String brand;
 	Key(float weight,String brand)
@@ -6,8 +7,9 @@ class Key{
 		this.weight=weight;
 		this.brand=brand;
 	}
-	public void details(){
+	public void details()
+	{
 		System.out.println("weight:"+weight);
 		System.out.println("brand:"+brand);
 	}
-}
+
